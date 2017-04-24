@@ -6,6 +6,8 @@
 
     <meta name="keywords" content="<%= @seo_keywords %>" />
 
+   
+
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
 
@@ -21,6 +23,8 @@
       <%= login_helper %>
 
       <%= yield %>
+
+      <%= copyright_generator %>
 
       <%= source_helper("application") %>
 

@@ -1,3 +1,9 @@
+GIT
+  remote: https://github.com/DerekAGilbert/gilbert_view_tool
+  revision: 18273d7463b69abd648c2dcc6e2ddeb4009b7555
+  specs:
+    gilbert_view_tool (0.1.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -39,8 +45,13 @@ GEM
       minitest (~> 5.1)
       tzinfo (~> 1.1)
     arel (7.1.4)
+    autoprefixer-rails (6.7.7.2)
+      execjs
     bcrypt (3.1.11)
     bindex (0.5.0)
+    bootstrap (4.0.0.alpha6)
+      autoprefixer-rails (>= 6.0.3)
+      sass (>= 3.4.19)
     builder (3.2.3)
     byebug (9.0.6)
     coderay (1.1.1)
@@ -177,10 +188,12 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bootstrap (~> 4.0.0.alpha6)
   byebug
   coffee-rails (~> 4.2)
   devise (~> 4.2, >= 4.2.1)
   friendly_id (~> 5.1.0)
+  gilbert_view_tool!
   jbuilder (~> 2.5)
   jquery-rails
   listen (~> 3.0.5)
