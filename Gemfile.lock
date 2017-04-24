@@ -1,3 +1,9 @@
+GIT
+  remote: https://github.com/DerekAGilbert/gilbert_view_tool
+  revision: 18273d7463b69abd648c2dcc6e2ddeb4009b7555
+  specs:
+    gilbert_view_tool (0.1.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -187,6 +193,7 @@ DEPENDENCIES
   coffee-rails (~> 4.2)
   devise (~> 4.2, >= 4.2.1)
   friendly_id (~> 5.1.0)
+  gilbert_view_tool!
   jbuilder (~> 2.5)
   jquery-rails
   listen (~> 3.0.5)
