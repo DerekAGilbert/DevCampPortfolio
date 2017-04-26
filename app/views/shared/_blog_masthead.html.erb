@@ -1,0 +1,8 @@
+<div class="blog-header">
+  <div class="container">
+    <h1 class="blog-title">My Blog</h1>
+    <p class="lead blog-description">“I find your lack of faith disturbing.”</p>
+    <%= link_to 'Create a new Blog', new_blog_path if logged_in?(:site_admin) %>
+  </div>
+</div>
+   
