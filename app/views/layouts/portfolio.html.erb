@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="utf-8">
     <title><%= @page_title %></title>
     <%= csrf_meta_tags %>
 
@@ -11,20 +12,31 @@
 
   </head>
 
+
+
   <body>
+    
+      <%= render 'shared/portfolio_nav' %>
+   
 
-      <p class="notice"><%= notice %></p>
-      <p class="alert"><%= alert %></p>
+      <%= render 'shared/portfolio_masthead' unless logged_in?(:site_admin) %>
 
-      <%= render "shared/nav", location: 'top' %>
-
-       <%= login_helper %>
-      
+  
       <%= yield %>
 
+    
+      <%= render 'shared/portfolio_footer' %>
+ 
+
       <%= source_helper("application") %>
+      
   </body>
 </html>
+  
+
+
+       
+      
 
 
 

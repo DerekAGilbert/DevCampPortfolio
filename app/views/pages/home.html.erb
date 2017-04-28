@@ -1,14 +1,12 @@
-<h1>Hi, <%= current_user.first_name %></h1>
+         <div class="inner cover">
+            <h1 class="cover-heading">Chewy, We're Home</h1>
+            <p class="lead">Welcome to my site, apart from great Star Wars quotes you can click the button below to learn more.</p>
+            <p class="lead">
+              <%= link_to "About Me", about_path, class: "btn btn-lg btn-secondary" %>
+            </p>
+          </div>
 
-<p>Find me in app/views/pages/home.html.erb</p>
-
-<h1>Blog Posts</h1>
-<%= @posts.inspect %>
-
-<h1>Skills</h1>
-<%= @skills.inspect %>
-
-
+      
 
 
 
