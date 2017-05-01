@@ -1,7 +1,7 @@
 <div class="container portfolio-container">
   <div class="row">
     <div class="col-md-7">
-      <%= image_tag portfolio_img(@portfolio_item.thumb_image, 'main' ) %>
+      <%= image_tag portfolio_img(@portfolio_item.main_image, 'main' ), width: '600px', height: '400px' %>
     </div>
 
     <div class="col-md-5">
@@ -20,6 +20,13 @@
       <% @portfolio_item.technologies.each do |t| %>
       <p><%= t.name %></p>
       <% end %>
+      <% if logged_in?(:site_admin) %>
+      <div class="">
+      <%= link_to "Edit item", edit_portfolio_path(@portfolio_item), class: 'btn btn-sm btn-warning' %>
+      <% end %>
+        
+
+      </div>
     </div>
   </div>
 </div>

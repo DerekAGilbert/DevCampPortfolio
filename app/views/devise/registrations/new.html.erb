@@ -11,13 +11,13 @@
         <div class="col-md-6">
 
           <div class="form-group">
-            <%= f.label :email %><br />
-            <%= f.email_field :email, autofocus: true, class: 'form-control' %>
+            <br />
+            <%= f.email_field :email, autofocus: true, class: 'form-control', placeholder: "Email" %>
           </div>
 
           <div class="form-group">
-            <%= f.label :name %><br />
-            <%= f.text_field :name, class: 'form-control' %>
+            <br />
+            <%= f.text_field :name, class: 'form-control', placeholder: "Name" %>
           </div>
 
         </div>
@@ -25,16 +25,16 @@
         <div class="col-md-6">
 
           <div class="form-group">
-            <%= f.label :password %>
+            
             <% if @minimum_password_length %>
-            <em>(<%= @minimum_password_length %> characters minimum)</em>
-            <% end %><br />
-            <%= f.password_field :password, autocomplete: "off", class: 'form-control' %>
+           
+            <% end %> <br />
+            <%= f.password_field :password, autocomplete: "off", class: 'form-control', placeholder: "Password (#{@minimum_password_length} characters minimum)" %>
           </div>
 
           <div class="form-group">
-            <%= f.label :password_confirmation %><br />
-            <%= f.password_field :password_confirmation, autocomplete: "off", class: 'form-control' %>
+            <br />
+            <%= f.password_field :password_confirmation, autocomplete: "off", class: 'form-control', placeholder: "Password Confirmation" %>
           </div>
 
         </div>
