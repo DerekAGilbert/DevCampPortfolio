@@ -18,11 +18,16 @@ end
   # GET /blogs/1
   # GET /blogs/1.json
   def show
+    if logged_in?(:site_admin) || @blog.Published?
     @blog = Blog.includes(:comments).friendly.find(params[:id])
     @comment = Comment.new
     
     @page_title = @blog.title
     @seo_keywords = @blog.body
+  else
+    redirect_to blogs_path, notice: "YOU HAVE NO POWER HERE"
+  end
+
   end
 
   # GET /blogs/new
