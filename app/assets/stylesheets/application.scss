@@ -214,14 +214,7 @@ padding-left: 2.5rem;
 padding-top: 0.75rem;
 }
 
-.photoo {
- border-width:1.0px;
-    border-style:solid;
 
-    border-color: #699;
-    display:inline-block;
-    
-  }
 
 .tech-news {
   color: black;
@@ -234,6 +227,28 @@ padding-top: 0.75rem;
 
 .tech-news a {
   color: green;
+}
+
+.app-card-container {
+  color: white;
+  text-align: left;
+  font-size: 20px;
+ 
+}
+
+.app-card-container > .card {
+  padding: 40px;
+  background: rgba(black, 0.79)
+
+}
+
+.profile-img {
+  border: 1px ;
+}
+
+.app-card-container a {
+  color: #EFCC7A;
+
 }
 
 
