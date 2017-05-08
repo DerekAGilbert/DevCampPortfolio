@@ -13,7 +13,7 @@ class Blog < ApplicationRecord
     	all
     end
 
-     def self.special_blogs
+     def self.featured_blogs
     	limit(2)
     end
 

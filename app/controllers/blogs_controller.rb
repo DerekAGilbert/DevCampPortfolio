@@ -8,10 +8,10 @@ class BlogsController < ApplicationController
   def index
     if logged_in?(:site_admin)
     @blogs = Blog.recent.page(params[:page]).per(5)
-    @page_title = "My Portfolio Blog"
+
   else
-     @blogs = Blog.Published.page(params[:page]).per(5)
-  end 
+     @blogs = Blog.Published.recent.page(params[:page]).per(5)
+  end
 end
 
 
@@ -21,7 +21,7 @@ end
     if logged_in?(:site_admin) || @blog.Published?
     @blog = Blog.includes(:comments).friendly.find(params[:id])
     @comment = Comment.new
-    
+
     @page_title = @blog.title
     @seo_keywords = @blog.body
   else
@@ -86,7 +86,7 @@ end
         elsif @blog.Published?
           @blog.Draft!
         end
-        
+
      redirect_to blogs_url notice: 'Post status updated'
   end
 
@@ -101,4 +101,3 @@ end
       params.require(:blog).permit(:title, :body, :topic_id)
     end
 end
-
