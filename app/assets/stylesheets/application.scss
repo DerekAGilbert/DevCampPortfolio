@@ -27,14 +27,27 @@ a:hover {
  * Base structure
  */
 
+
+
 html,
 body {
   height: 100%;
+  font-family: 'Lato', sans-serif;
+
 }
 body {
   color: #fff;
   text-align: center;
   text-shadow: 0 .05rem .1rem rgba(0,0,0,.5);
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  font-family: 'Lato', sans-serif;;
 }
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
@@ -209,19 +222,12 @@ body {
 
 .aabout {
 
-text-align: center;
+text-align: left;
 padding-left: 2.5rem;
 padding-top: 0.75rem;
 }
 
-.photoo {
- border-width:1.0px;
-    border-style:solid;
 
-    border-color: #699;
-    display:inline-block;
-    
-  }
 
 .tech-news {
   color: black;
@@ -234,6 +240,38 @@ padding-top: 0.75rem;
 
 .tech-news a {
   color: green;
+}
+
+.app-card-container {
+  color: white;
+  text-align: left;
+  font-size: 20px;
+ 
+}
+
+.app-card-container > .card {
+  padding: 40px;
+  background: rgba(black, 0.79)
+
+}
+
+.profile-img {
+  border: 1px ;
+}
+
+.app-card-container a {
+  color: #EFCC7A;
+
+}
+
+.card-block {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.skill {
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 
