@@ -9,7 +9,7 @@
     <%= f.text_field :title, class: 'form-control', placeholder: "Title" %>
   </div>
 
-   <div class="form-group">
+  <div class="form-group">
     <%= f.label :topic_id %>
     <%= f.collection_select(:topic_id, Topic.all, :id, :title,
                               {
@@ -19,7 +19,14 @@
                               class: 'form-control'
                             )
     %>
+  </div>
 
+  <div class="form-group">
+    <%= f.radio_button :status, 'Draft' %>
+    <%= f.label :status, 'Draft' %>
+
+    <%= f.radio_button :status, 'Published' %>
+    <%= f.label :status, 'Published' %>
   </div>
 
   <div class="form-group">
@@ -27,6 +34,6 @@
   </div>
 
   <div class="form-group">
-    <%= f.submit "May the Force be with you", class: 'btn btn-primary btn-block' %>
+    <%= f.submit "Submit", class: 'btn btn-primary' %>
   </div>
-<% end %>
+  <% end %>
