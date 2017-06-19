@@ -227,8 +227,6 @@ padding-left: 2.5rem;
 padding-top: 0.75rem;
 }
 
-
-
 .tech-news {
   color: black;
   margin: 20px;
@@ -246,13 +244,17 @@ padding-top: 0.75rem;
   color: white;
   text-align: left;
   font-size: 20px;
- 
+
 }
 
 .app-card-container > .card {
   padding: 40px;
   background: rgba(black, 0.79)
 
+}
+
+.jumbo-about-me{
+  background-color: rgba(#2d2d2d, 0.5);
 }
 
 .profile-img {
@@ -274,27 +276,7 @@ padding-top: 0.75rem;
   margin-bottom: 10px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*Custom Styles */
+.p {
+  text-indent: 20px;
+}

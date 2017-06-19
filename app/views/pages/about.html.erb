@@ -7,7 +7,7 @@
 
 	<div class="row">
 		 <div class="col-md-4">
-		    <%= image_tag "IMG_6869.jpg", width: 300, alt: "profile image", class: 'profile-img' %>
+		    <%= image_tag "profile.jpg", width: '100%', alt: "profile image", class: 'profile-img' %>
 		    <div class="skills">
 	          <% @skills.each do |skill| %>
 	            <div class="skill">
@@ -28,16 +28,17 @@
 
 
 		  <div class="col-md-8">
-		    <div class= "aabout">
+		    <div class= "jumbotron jumbo-about-me">
 
-				<p>Thank you for visiting my corner of the interwebs. To tell you a little more about myself, I am 22 years old and am an avid student of life, and all of the things it has to teach us. Recently my hobies include learning how to code via Ruby on Rails through the DevCamp System, competing competitively in Brazilian Jiu jistu, and working on various entrepreneurial based projects.</p>
+				<p class="p">Thank you for visiting my home on the Web. This is a site I have built to display projects I have worked on. And host my Blog where I write about a variety of topics ranging from my favorite books to development solutions I have found for web-based applications. </p>
+        <hr>
 
-				<p>I moved to Utah 2 years go and have quickly developed a great love for the area. I enjoy the mountains and the
-				Tech scene the most. Im a member of the Church of Jesus Christ of Latter Day Saints and live in Provo officially. Please feel free to visit my contact page or my blog to learn more about me and the way I think.</p>
+				<p class="p"> I am a Web Developer who is primarily focused on Rails based development. I am passionate about learning and creating awesome applications. Please Visit my Contact page if you would like to work together.  </p>
 
-				   <p>
+
+           </div>
 			          <button
-			            class="btn btn-warning"
+			            class="btn btn-warning btn-block"
 			            type="button"
 			            data-toggle="collapse"
 			            data-target="#jobHistory"
@@ -48,7 +49,7 @@
 			          </button>
 
 			          <button
-			            class="btn btn-warning"
+			            class="btn btn-warning btn-block"
 			            type="button"
 			            data-toggle="collapse"
 			            data-target="#education"
@@ -58,7 +59,7 @@
 			            Education
 			          </button>
 
-			           <button
+			           <!-- <button
 			            class="btn btn-warning"
 			            type="button"
 			            data-toggle="collapse"
@@ -67,9 +68,9 @@
 			            aria-controler="books"
 			          >
 			            Favorite Books
-			          </button>
+			          </button> -->
 
-			          <button
+			          <!-- <button
 			            class="btn btn-warning"
 			            type="button"
 			            data-toggle="collapse"
@@ -77,11 +78,11 @@
 			            aria-expanded="false"
 			            aria-controler="activities"
 			          >
-			            Activities
-			          </button>
-			        </p>
+			            Things of Interest
+			          </button> -->
 
-			        <p>
+
+
 			          <div class="collapse" id="jobHistory">
 			            <div class="card card-block">
 			              Product Development <a  href="https://www.premier.ag/home" target= "#">Premier Ag.</a>
@@ -103,7 +104,7 @@
 			            </div>
 			            </div>
 
-			             <div class="collapse" id="books">
+			             <!-- <div class="collapse" id="books">
 			            <div class="card card-block">
 			             Elon Musk: Tesla, SpaceX, and the Quest for a Fantastic Future <b>Ashlee Vance</b><a  href="http://www.goodreads.com/book/show/22535480-elon-musk?from_search=true" target= "#">See here.</a>
 			            </div>
@@ -113,8 +114,8 @@
 			            <div class="card card-block">
 			             How to Fail at Almost Everything and Still Win Big: Kind of the Story of My Life <b>Scott Adams</b><a  href="http://www.goodreads.com/book/show/17859574-how-to-fail-at-almost-everything-and-still-win-big?ac=1&from_search=true" target= "#">See here.</a>
 			            </div>
-			            </div>
-
+			            </div> -->
+<!--
 			            <div class="collapse" id="activities">
 			            <div class="card card-block">
 			              Brazilian Jiu Jitsu Practitioner<a  href="http://bjjutah.com/" target= "#">Learn more.</a>
@@ -125,10 +126,7 @@
 			            <div class="card card-block">
 			              Podcast Enthusiast<a  href="https://dag-portfolio.herokuapp.com/topics/6" target= "#">Learn More.</a>
 			            </div>
-			          </div>
-					</p>
-
-		 		</div>
+			          </div> -->
 		 	 </div>
  		</div>
 	</div>
