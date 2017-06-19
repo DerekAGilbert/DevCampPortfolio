@@ -1,21 +1,19 @@
 <div class="inner cover">
     <h1 class="cover-heading">Tech News</h1>
+    <h5>Live tweets from the Ruby on Rails Community</h5>
 
-       <div class="row"> 
-        <% @tweets.each do |tweet| %>
-			<div class="col-md-6">
-			   <div class="tech-news">
-			     <div class="card">
-			     <%= twitter_parser tweet %>
-			     </div>
-			   </div>
-			</div>
-       <% end %>
-	</div>
+
+    <div class="container container-tech">
+  <div class="row">
+    <% @tweets.each do |tweet| %>
+    <div class="col-md-6">
+      <div class="tech-news">
+        <div class="card card-tech">
+          <%= twitter_parser tweet %>
+        </div>
+      </div>
+    </div>
+    <% end %>
+  </div>
 </div>
-        	
-
-
-
-
-
+</div>

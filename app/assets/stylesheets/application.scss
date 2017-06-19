@@ -228,7 +228,7 @@ padding-top: 0.75rem;
 }
 
 .tech-news {
-  color: black;
+  color: white;
   margin: 20px;
 }
 
@@ -237,7 +237,16 @@ padding-top: 0.75rem;
 }
 
 .tech-news a {
-  color: green;
+  color: blue;
+}
+
+.container-tech {
+  background: rgba(black, 0.65);
+  padding: 15px;
+}
+
+.card-tech {
+  background-color: rgba(#3f4140, 0.5)
 }
 
 .app-card-container {
@@ -249,12 +258,12 @@ padding-top: 0.75rem;
 
 .app-card-container > .card {
   padding: 40px;
-  background: rgba(black, 0.79)
+  background: rgba(black, 0.5)
 
 }
 
 .jumbo-about-me{
-  background-color: rgba(#2d2d2d, 0.5);
+  background-color: rgba(#3f4140, 0.5);
 }
 
 .profile-img {
